@@ -1,0 +1,173 @@
+:root{
+    --background-body: linear-gradient(60deg,#f69d3c,#3f87a6);
+    --principal-font: 'M PLUS 1 Code', sans-serif;
+    --color-card: rgba(236, 236, 236, 0.932);
+    --color-photo-border: #211f1c;
+    --border-knowledge: #211f1c;
+    --background-knowledge: #455caf;
+    --color-white: #fff;
+    --color-h3: #f7786b;
+    --color-hyphen-marked: rgba(19, 155, 213, 0.628);
+    --color-gray: #bababa;
+}
+*,::before,::after{
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    margin:0;
+    padding:0;
+}
+body{
+    max-height: 100vh;
+    background: var(--background-body);
+    font-family: var(--principal-font);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+/* Principal container card */
+#container-card{
+    vertical-align: middle;
+    font-size: 3em;
+    width: 40vw;
+    background-color: var(--color-card);
+    border-radius: 4px;
+    padding: 30px 25px;
+    margin: 14px auto;
+}
+.div-flex{
+    display: flex;
+    align-items: center;
+}
+
+/* Style img profile */
+#personal-photo{
+    border-right: 1px solid var(--color-photo-border);
+    padding: 30px 40px
+}
+#personal-photo img{
+    border-radius: 50%;
+    width: 10vw;
+    height: auto;
+    margin-right: 10px;
+
+}
+
+#personal-information{
+    display: inherit;
+    flex-direction: column;
+    margin-left: 30px;
+    width: 100vw;
+}
+/*Style presentation*/
+.name-information{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 3.4rem;
+    text-align: center;
+}
+.name-specialization{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    font-size: 1.4rem;
+    align-self: center;
+}
+.description{
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+#knowledge{
+    border: 1.2px solid var(--border-knowledge);
+    margin: 20px auto 0;
+    padding: 10px;
+    background-color: var(--background-knowledge);
+}
+.knowledge-skills{
+    display: flex;
+    flex-direction: column;
+    color: var(--color-white);
+}
+h3{
+    font-size: 1.9rem;
+    text-align: center;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-decoration: underline;
+    color: var(--color-h3);
+}
+li{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+    list-style: none;
+}
+.name-skill{
+    text-align: center;
+}
+.hyphen{
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+.blue-skills{
+    color: var(--color-hyphen-marked);
+    text-align: right;
+}
+
+/* FOOTER */
+.footer{
+    text-align: center;
+}
+.footer span {
+    font-size: 2rem;
+}
+.container-email{
+    display:flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.email{
+    background-color: var(--color-gray);
+    padding: 5px;
+}
+@media screen and (max-width: 1980px){
+    body{
+        overflow: scroll;
+        max-height: none;
+        height: auto;
+    }
+}
+@media screen and (max-width: 1335px) {
+    .div-flex{
+        flex-direction: column;
+    }
+    #personal-photo{
+        border-right: none;
+    }
+    #container-card{
+        width: 70vw;
+    }
+    #personal-photo img{
+        width: 120px;
+    }
+}
+@media screen and (max-width: 640px){
+    #container-card{
+        width: 100vw;
+        margin: 0;
+    }
+    .description{
+        font-size: 1.6rem;
+    }
+
+    #personal-information{
+        width: 80vw;
+
+    }
+}
