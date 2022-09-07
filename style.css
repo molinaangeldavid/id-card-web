@@ -109,16 +109,6 @@ li{
 .name-skill{
     text-align: center;
 }
-.hyphen{
-    text-align: center;
-    font-weight: 800;
-    font-size: 1.8rem;
-    letter-spacing: 1px;
-}
-.blue-skills{
-    color: var(--color-hyphen-marked);
-    text-align: right;
-}
 
 /* FOOTER */
 .footer{
@@ -135,6 +125,7 @@ li{
 .email{
     background-color: var(--color-gray);
     padding: 5px;
+    font-size: 3rem;
 }
 @media screen and (max-width: 1980px){
     body{
@@ -169,5 +160,10 @@ li{
     #personal-information{
         width: 80vw;
 
+    }
+    .container-email{
+        width: 100vw;
+        display: inline;
+        padding: 5px;
     }
 }
